@@ -1,3 +1,5 @@
+html{margin:0; padding:0;}
+
 body {
     margin: 0;
     font-size: 28px;
@@ -11,7 +13,6 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     color: #ffce00;
 }
-
 
 .header-img {
     height: 50%;
@@ -52,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .topnav a {
@@ -61,6 +63,14 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.topnav img {
+    float: right;
+    display: block;
+    padding: 5px 5px;
+    height: 75px !important;
+    width: 75px !important;    
 }
 
 .topnav a:hover:not(.active) {
@@ -78,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 900px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
-        float: right;
+        float: left;
         display: block;
   }
 }
@@ -100,4 +110,83 @@ h1, h2, h3, h4, h5, h6 {
 /* ELSE */
 
 
+/* Container holding the image and the text */
+.backgroundbox {
+    /* margin: 0; */
+    height: 100% !important;
+   /* width: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;    
+    z-index: -1;
+    /* max-width: 1920px; 
+    margin: 0; */
+     
+}
 
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#top img {  
+    height:100%;
+    max-width:100%;
+    object-fit: cover
+}
+
+#abt_intro1{
+    background-color: lightslategray;
+    color: white;
+    text-align:center;
+    
+}
+
+#abt_intro2{
+    /* background-color: lightslategray; */
+    color: white;
+    text-align:center;
+}
+
+#con{
+    text-align:center;
+    
+}
+
+#abt_intro3 img{
+    height:250px;
+    width:auto;
+    
+}
