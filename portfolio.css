@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Centered text */
 .centered {
   position: absolute;
-  top: 25%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -190,3 +190,77 @@ h1, h2, h3, h4, h5, h6 {
     width:auto;
     
 }
+
+header, .full-width {
+  width: 100%;
+  background: #000;
+}
+
+.wrap {
+    width: 80%;
+    max-width: 24em;
+    margin: 0 auto;
+    padding: 0.25em 0.625em;
+    background: #000
+}
+
+#phil {
+    background-color: black
+    
+}
+
+.wrap2 {
+    width: 80%;
+    max-width: 24em;
+    margin: 0 auto;
+    padding: 0.25em 0.625em;
+    background-image: url(img/PANO_20180811_084025.jpg)
+}
+
+#dds {
+    background-image: url(img/PANO_20190722_141608.vr.jpg);
+    background-size: cover;
+}
+
+#med {
+    background-image: url(img/PANO_20180811_101928.jpg);
+    background-size: cover;
+}
+
+#udg {
+    background-image: url(img/IMG_20190802_145103-PANO.jpg);
+    background-size: cover;
+}
+
+#introac {
+    height: 100vh;
+}
+
+<style>
+
+.containerac {
+  height: 200px;
+  position: relative;
+  border: 0px solid green;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.strokeme
+{
+    color: black;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+</style>
